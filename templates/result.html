@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+
+      <h3>Result By CEP</h3>
+      <br>
+        <div class="content-section">
+          <li class="list-group-item list-group-item-light"> para o CEP: {{consultCEP}}</li>
+          <li class="list-group-item list-group-item-light">Latitude: {{lat}}</li>
+          <li class="list-group-item list-group-item-light">Longetude: {{log}}</li>
+        </div>
+       
+        <imsrc="https://seeklogo.com/images/C/correios-2020-logo-D733E75ED9-seeklogo.com.png" alt="some text" width=300 height=200></video>
+
+        <br>
+        <div align="left">
+          <h3>Analyze</h3>
+
+            {% for table in tables %}
+              <li class="list-group-item list-group-item-light">{{ table|safe }}</li>
+            {% endfor %}
+
+          <br>
+
+        <a>Information Taken From The Site </a><a href="http://www.buscacep.correios.com.br"  target="_blank">correios.com.br</a>
+        <br>
+        <br>
+   
+       </div>
+
+       <br> 
+      <br>
+
+      <p><a href="/teladados"><img src="https://www.tcionline.com.br/secure/hapvida/images/voltar.png" alt="some text" width=100 height=100></a></p>
+
+      <br>
+      <br>
+
+{% endblock content %}
